@@ -1,28 +1,35 @@
+
 body {
+    margin: 40px auto;
+    max-width: 800px;
     background-color: white;
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
 }
 
-#titulo1 {
+#titulo1{
     font-size: 28pt;
     text-align: center;
     color: #00796b;
-
+    border-bottom: 2px solid #00796b;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-h2 {
+h2{
     font-size: 20pt;
     color: #00695c;
-
+    margin-top: 20px;
+    margin-bottom: 5px; 
 }
 
-p {
+p{
     font-size: 16px;
     color: #333;
     text-align: justify;
-
+    margin-top: 3px;
+    margin-bottom: 10px;
 }
 
 a {
@@ -43,7 +50,9 @@ i {
 
 .info-contato {
     background: #e0f2f1;
-
+    padding: 10px;
+    border-radius: 5px;
     font-weight: bold;
     text-align: center;
 }
+
