@@ -1,11 +1,12 @@
 
 body {
     margin: 40px auto;
-    max-width: 800px;
+    width: 800px;
     background-color: white;
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+    outline: 3px outset black;
 }
 
 #titulo1{
@@ -42,6 +43,9 @@ a:hover {
     color: #005f56;
     text-decoration: underline;
 }
+a:active{
+    color:#191970;
+}
 
 i {
     font-size: 18px;
@@ -54,5 +58,12 @@ i {
     border-radius: 5px;
     font-weight: bold;
     text-align: center;
+}
+ol li{
+    list-style-type: upper-roman;
+}
+ul li{
+    list-style-type:square;
+    list-style-position:initial ;
 }
 
