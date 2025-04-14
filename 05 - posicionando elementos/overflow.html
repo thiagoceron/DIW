@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        .container{
+            border:2px solid #000;
+            padding: 16px;
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            margin-bottom: 16px;
+        }
+        .item{
+            background-color: blanchedalmond;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .fit-content .item{
+            width:fit-content;
+        }
+        .min-content .item{
+            width:min-content;  
+        }
+        .max-content .item{
+            width:max-content;
+        }
+        .overflow-hidden{  /* esconde*/
+            overflow: hidden;
+        }
+        .overflow-scroll{  /* faz um scroll*/
+            overflow: scroll;
+        }
+        .overflow-auto{     /* aumenta conforme precisa*/
+            overflow: auto;
+        }
+        .overflow-visible{   /* Deixa normal*/
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container fit-content overflow-auto">
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, eos, inventore odio
+            consectetur enim dolore earum eum assumenda odit blanditiis labore tempore expedita omnis aperiam ullam
+            debitis nemo autem. Nisi!</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, omnis.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti! Deserunt perferendis
+            beatae aliquid quisquam voluptas earum ipsum, architecto asperiores?</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis sint repudiandae sit.
+            Temporibus, nisi! Nulla quas perspiciatis porro dolore quaerat culpa est, rerum architecto dolorem alias
+            quod labore reiciendis nam dignissimos beatae enim nisi a ipsum temporibus magnam debitis repellendus.</div>
+         </div>
+        <div class="container min-content overflow-visible">
+            <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, eos, inventore
+                odio
+                consectetur enim dolore earum eum assumenda odit blanditiis labore tempore expedita omnis aperiam ullam
+                debitis nemo autem. Nisi!</div>
+            <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, omnis.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti! Deserunt
+                perferendis
+                beatae aliquid quisquam voluptas earum ipsum, architecto asperiores?</div>
+            <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis sint repudiandae sit.
+                Temporibus, nisi! Nulla quas perspiciatis porro dolore quaerat culpa est, rerum architecto dolorem alias
+                quod labore reiciendis nam dignissimos beatae enim nisi a ipsum temporibus magnam debitis repellendus.
+            </div>
+             </div>
+            <div class="container max-content overflow-hidden">
+                <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, eos, inventore
+                    odio
+                    consectetur enim dolore earum eum assumenda odit blanditiis labore tempore expedita omnis aperiam
+                    ullam
+                    debitis nemo autem. Nisi!</div>
+                <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, omnis.</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti! Deserunt
+                    perferendis
+                    beatae aliquid quisquam voluptas earum ipsum, architecto asperiores?</div>
+                <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis sint repudiandae
+                    sit.
+                    Temporibus, nisi! Nulla quas perspiciatis porro dolore quaerat culpa est, rerum architecto dolorem
+                    alias
+                    quod labore reiciendis nam dignissimos beatae enim nisi a ipsum temporibus magnam debitis
+                    repellendus.</div>
+                </div>
+</body>
+
+</html>

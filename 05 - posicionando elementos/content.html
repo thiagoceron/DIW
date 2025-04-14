@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Content</title>
+    <style>
+        .container{
+            border:2px solid #000;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+        }
+        .item{
+            background-color: blanchedalmond;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .fit-content{
+            width:fit-content    /*Pega o tamanho maximo do body, tamanho correto */
+        }
+        .min-content{
+            width:min-content   /* Pega a largura da maior palavra*/
+        }
+        .max-content{
+            width:max-content    /* Pega o tamanho maximo (largura) da nossa maior frase (caracter)*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container fit-content">
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, eos, inventore odio
+            consectetur enim dolore earum eum assumenda odit blanditiis labore tempore expedita omnis aperiam ullam
+            debitis nemo autem. Nisi!</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, omnis.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti! Deserunt perferendis
+            beatae aliquid quisquam voluptas earum ipsum, architecto asperiores?</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis sint repudiandae sit.
+            Temporibus, nisi! Nulla quas perspiciatis porro dolore quaerat culpa est, rerum architecto dolorem alias
+            quod labore reiciendis nam dignissimos beatae enim nisi a ipsum temporibus magnam debitis repellendus.</div>
+         </div>
+        <div class="container min-content">
+            <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, eos, inventore
+                odio
+                consectetur enim dolore earum eum assumenda odit blanditiis labore tempore expedita omnis aperiam ullam
+                debitis nemo autem. Nisi!</div>
+            <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, omnis.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti! Deserunt
+                perferendis
+                beatae aliquid quisquam voluptas earum ipsum, architecto asperiores?</div>
+            <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis sint repudiandae sit.
+                Temporibus, nisi! Nulla quas perspiciatis porro dolore quaerat culpa est, rerum architecto dolorem alias
+                quod labore reiciendis nam dignissimos beatae enim nisi a ipsum temporibus magnam debitis repellendus.
+            </div>
+             </div>
+            <div class="container max-content">
+                <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, eos, inventore
+                    odio
+                    consectetur enim dolore earum eum assumenda odit blanditiis labore tempore expedita omnis aperiam
+                    ullam
+                    debitis nemo autem. Nisi!</div>
+                <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, omnis.</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti! Deserunt
+                    perferendis
+                    beatae aliquid quisquam voluptas earum ipsum, architecto asperiores?</div>
+                <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis sint repudiandae
+                    sit.
+                    Temporibus, nisi! Nulla quas perspiciatis porro dolore quaerat culpa est, rerum architecto dolorem
+                    alias
+                    quod labore reiciendis nam dignissimos beatae enim nisi a ipsum temporibus magnam debitis
+                    repellendus.</div>
+                </div>
+</body>
+
+</html>

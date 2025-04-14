@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--TOP RIGHT BOTTOM LEFT, ordem dos cantos-->
+    <!-- padding é a medida interna entre os conteudos, espaçamento-->
+    <!-- margin é a medida da linha até o outro elemento-->
+    <meta charset="UTF-8">
+    <title>Trabalhando com Altura e Largura</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        p {
+            background-color: lightgray;
+            padding: 20px 30px;
+            text-align: justify;
+        }
+
+        h1 {
+            background-color: coral;
+            width: 700px;
+            height: 400px;
+            outline: 5px dotted black; /*ouline: contorno do quadrado*/
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+
+        h2 {
+            background-color: aqua;
+            width: 700px;   /* width (largura) pode ser em px (sempre o mesmo) e % */
+            height: 400px; /* height (altura) pode ser em px (sempre o mesmo) e % */
+            /*padding: 50px;
+            padding-top: 20px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-left: 35px;*/
+            padding: 20px 30px 10px 35px;
+            /*border-width: 5px;
+            border-style: solid;
+            border-color: black;*/
+            border: 5px dotted black;
+        }
+        .destaque{
+            background-color: chartreuse;
+            font-size: 24px;
+        }
+        .tamanho{
+            width: 400px;
+            height: 200px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <h2>Largura e Altura</h2>
+    <p class="destaque">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="destaque tamanho">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="tamanho">Lorem ipsum dolor sit amet.</p>
+
+</body>
+
+</html>
