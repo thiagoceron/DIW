@@ -1,0 +1,91 @@
+html{
+    background-color: blue;
+    font-family: sans-serif;
+    color: black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+form{
+    width: 90%;
+    min-width: 28.125em;
+    max-width: 35em;
+    background-color: white;
+    box-shadow: -8px -8px 6px -2px rgba(0, 0, 0, 0.7);
+    border-radius: 0.3em;
+} 
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0 0 0.625em 1.875em; 
+}
+label, input{
+    display: block;
+    width: 90%;
+}
+label {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0.2em;
+}
+input{
+    border: 2px solid transparent;
+    border-bottom-color: #bbb;
+    padding: 0.75em;
+    margin: 0.5em 0 1.5em;
+    outline: 0;
+}
+legend{
+    padding: 1.5em 0 .5em 0;
+    color: black;
+    font-size: 1.7em;
+    margin: 0;
+}
+.btn{
+    background-color: blue;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    padding: .5em 1em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: .2em;
+}
+.btn2{
+    color: blue;
+    cursor: pointer;
+    padding: .5em .8em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: .2em;
+    background: none;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 1.5em 0;
+    width: 93%;
+
+}
+
+.left-btn {
+    display: flex;   
+}
+
+.actions p {
+    margin: 0;
+    font-size: 0.9em;
+    margin-left: auto;
+}
+
+
