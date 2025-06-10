@@ -1,30 +1,70 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     margin: 2.5rem auto;
-    width: 50rem;
-    background-color: #f0f0f0; 
-    font-family: Montserrat;
+    width: 90%;
+    max-width: 50rem;
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     padding: 2rem;
+    line-height: 1.6;
 }
 
 .curriculo {
     width: 100%;
-    max-width: 50rem;
     background-color: white;
-    background-image: url(imagem\ fundo.png); 
+    background-image: url(imagem\ fundo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #333;
     border-radius: 0.9rem;
     box-shadow: 0 0 0.9rem rgba(0, 121, 107, 0.4);
-    padding: 1.8rem;
-    text-align: left;
+    padding: 2.5rem;
     outline: 0.1rem solid #00796b;
+}
+
+.conteudo-principal {
+    display: grid;
+    margin-top: 2rem;
+    gap: 1.5rem 2.5rem;
+    grid-template-columns: 2fr 1.2fr;
+    grid-template-areas:
+        "objetivo      habilidades"
+        "experiencia   habilidades"
+        "atividades    idiomas"
+        "formacao      formacao";
+}
+
+.secao-objetivo {
+    grid-area: objetivo;
+}
+
+.secao-experiencia {
+    grid-area: experiencia;
+}
+
+.secao-atividades {
+    grid-area: atividades;
+}
+
+.secao-habilidades {
+    grid-area: habilidades;
+}
+
+.secao-idiomas {
+    grid-area: idiomas;
+}
+
+.secao-formacao {
+    grid-area: formacao;
+}
+
+#titulo1, .contato {
+    grid-column: 1 / -1;
 }
 
 #titulo1 {
@@ -36,16 +76,18 @@ body {
 h2 {
     font-size: 1.25rem;
     color: #00695c;
-    margin-top: 1.25rem;
-    margin-bottom: 0.3rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #e0f2e6;
+    padding-bottom: 0.4rem;
+    font-weight: 600;
 }
 
 p {
     font-size: 1rem;
     color: #333;
     text-align: justify;
-    margin-top: 0.1rem;
-    margin-bottom: 0.6rem;
+    margin: 0.1rem 0 0.6rem 0;
 }
 
 a {
@@ -59,10 +101,6 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active {
-    color: #191970;
-}
-
 i {
     font-size: 1rem;
     margin-right: 0.3rem;
@@ -70,20 +108,33 @@ i {
 
 .info-contato {
     background: #e0f2e6;
-    padding: 0.6rem;
+    padding: 0.8rem;
     border-radius: 0.3rem;
     font-weight: bold;
     text-align: center;
 }
 
+.redes {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+ul, ol {
+    padding-left: 1.2rem;
+    list-style-position: outside;
+    margin: 0;
+}
+
+ol li, ul li {
+    margin-bottom: 0.5rem;
+}
+
 ol li {
-    list-style-type: upper-roman;
-    list-style-position: inside;
+    list-style-type: decimal;
 }
 
 ul li {
     list-style-type: square;
-    list-style-position: inside;
 }
 
 .th {
@@ -102,4 +153,45 @@ ul li {
     margin-bottom: 1.25rem;
     border-bottom: 0.15rem solid #00796b;
     padding-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 48em) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .curriculo {
+        border-radius: 0;
+        box-shadow: none;
+        outline: none;
+        padding: 1.5rem;
+    }
+
+    .conteudo-principal {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        grid-template-areas:
+            "objetivo"
+            "experiencia"
+            "atividades"
+            "formacao"
+            "habilidades"
+            "idiomas";
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .info-contato {
+        font-size: 0.9rem;
+    }
+
+    #titulo1 {
+        font-size: 1.8rem;
+    }
 }
