@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador regressivo</title>
+    <script>
+        function contador(){
+        let numero = prompt("Digite um número")
+        numero = parseFloat(numero)
+
+        if(isNaN(numero)){
+            alert('Digite apenas números')
+            return
+        }
+        for(let i=numero;i>=0;i--){
+            document.write(i, "<br>")
+        }
+    }
+    contador()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

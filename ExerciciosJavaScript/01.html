@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operação com dois Números</title>
+    <script>
+        function calculos(){
+        let n1 = prompt("Digite o primeiro número: ")
+        n1 = parseFloat(n1);
+        let n2 = prompt("Digite o segundo número: ")
+        n2 = parseFloat(n2)
+        if(isNaN(n1) || isNaN(n2)){
+            alert("Digite apenas números")
+            return
+        }
+        const soma = n1 + n2
+        const sub = n1 - n2
+        const multi = n1 * n2
+
+        let div
+        let resto
+        if(n2 === 0){
+            div = "Não é possível dividir por zero"
+            resto = "Não é possível dividir por zero"
+        }else{
+            div = n1 / n2
+            resto = n1 % n2
+        }
+        const resultado = 
+            `Soma: ${soma}
+            Subtração: ${sub}
+            Multiplicação: ${multi}
+            Divisão: ${div}
+            Resto da Divisão: ${resto}
+            `;
+            alert(resultado)
+    }
+    calculos()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

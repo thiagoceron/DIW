@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do IMC</title>
+    <script>
+        function IMC() {
+            let peso = prompt("Qual o seu peso? ")
+            peso = parseFloat(peso)
+            let altura = prompt("Qual a sua altura? ")
+
+            if (isNaN(peso) || isNaN(altura)) {
+                alert("Digite apenas números")
+                return
+            }
+
+            const imc = peso / (altura * altura)
+
+            let classifica
+
+            if (imc <= 16.9) {
+                classifica ='imc muito baixo'
+            } 
+            else if (imc <= 18.4){
+              classifica ='imc baixo'
+            } 
+            else if (imc <= 24.9){
+                classifica ='normal'
+            }
+            else if (imc <= 29.9){
+                classifica ='acima do peso'
+            }
+            else if (imc <= 34.9){
+                 classifica ='obesidade grau 1'
+            }
+            else if (imc <= 40){
+                classifica ='obesidade grau 2'
+            }
+            else{
+                classifica ='obesidade grau 3'
+            }
+
+            alert("Seu IMC é " + imc.toFixed(2) + " e a classificação é "+classifica)
+        }
+        IMC();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
